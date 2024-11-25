@@ -10,5 +10,10 @@ namespace Apartment_brokerage.Core.Repositories
     public interface IclientRepository
     {
         public List<Client> GetAll();
+        public Client GetById(int id);
+        public Client AddClient(Client s);
+
+        public Client UpdateClient(int id, Client client);
+        public void DeleteClient(int id);
     }
 }

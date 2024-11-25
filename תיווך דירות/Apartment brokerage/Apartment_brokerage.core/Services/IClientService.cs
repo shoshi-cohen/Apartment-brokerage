@@ -10,5 +10,10 @@ namespace Apartment_brokerage.Core.Services
     public interface IClientService
     {
         public List<Client> GetList();
+        public Client GetClientsById(int id);
+        public Client AddClients(Client client);
+
+        public Client UpdateClients(int id, Client client);
+        public void DeleteClients(int id);
     }
 }

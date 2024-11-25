@@ -26,6 +26,26 @@ namespace partment_brokerage.Service
             //לוגיקה עסקית
             return _apartmentRepository.GetAll();
         }
+
+        public Apartment AddApartments(Apartment Apartment)
+        {
+            return _apartmentRepository.AddApartment(Apartment);
+        }
+
+        public void DeleteApartments(int id)
+        {
+            _apartmentRepository.DeleteApartment(id);
+        }
+
+        public Apartment? GetApartmentsById(int id)
+        {
+            return _apartmentRepository.GetById(id);
+        }
+
+        public Apartment UpdateApartments(int id, Apartment placement)
+        {
+            return _apartmentRepository.UpdateApartment(id, placement);
+        }
     }
 }
 

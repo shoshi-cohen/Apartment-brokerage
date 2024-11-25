@@ -23,6 +23,30 @@ namespace Apartment_brokerage.Service
             //לוגיקה עסקית
             return _sellingApartmentRipository.GetAll();
         }
+      
+
+        public SellingApartment AddSellingApartments(SellingApartment SellingApartment)
+        {
+            
+            return _sellingApartmentRipository.AddSellingApartment(SellingApartment);
+        }
+
+       
+
+        public SellingApartment? GetSellingApartmentsById(int id)
+        {
+            return _sellingApartmentRipository.GetById(id);
+        }
+
+        public SellingApartment UpdateSellingApartments(int id, SellingApartment SellingApartment)
+        {
+            return _sellingApartmentRipository.UpdateSellingApartment(id, SellingApartment);
+        }
+
+        public void DeleteSellingApartments(int id)
+        {
+            _sellingApartmentRipository.DeleteSellingApartment(id);
+        }
     }
 }
 

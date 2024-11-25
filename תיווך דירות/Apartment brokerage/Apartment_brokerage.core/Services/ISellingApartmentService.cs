@@ -9,6 +9,12 @@ namespace Apartment_brokerage.Core.Services
 {
     public interface ISellingApartmentService
     {
-        public List<SellingApartment> GetList();
+        public List<SellingApartment> GetList();    
+        public SellingApartment GetSellingApartmentsById(int id);
+        public SellingApartment AddSellingApartments(SellingApartment SellingApartment);
+
+        public SellingApartment UpdateSellingApartments(int id, SellingApartment SellingApartment);
+        public void DeleteSellingApartments(int id);
+
     }
 }

@@ -25,5 +25,27 @@ namespace partment_brokerage.Service
             //לוגיקה עסקית
             return _clientRepository.GetAll();
         }
+        public Client AddClients(Client client)
+        {
+
+            return _clientRepository.AddClient(client);
+        }
+
+
+
+        public Client? GetClientsById(int id)
+        {
+            return _clientRepository.GetById(id);
+        }
+
+        public Client UpdateClients(int id, Client client)
+        {
+            return _clientRepository.UpdateClient(id, client);
+        }
+
+        public void DeleteClients(int id)
+        {
+            _clientRepository.DeleteClient(id);
+        }
     }
 }
